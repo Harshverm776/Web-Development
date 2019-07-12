@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<title>
+			MY Form
+		</title>
+	</head>
+	<body>
+		<h3>Registration Form :</h3>
+		<form action="somefile.php" method="post">
+		<table cellspacing="3px" cellpadding="3px" >
+			<tr>
+				<td>Name</td>
+				<td><input type="text" name="username"/></td>
+			</tr>
+			<tr>
+				<td>Password</td>
+				<td><input type="Password" name="password"/></td>
+			</tr>
+			<tr>
+				<td>Gender</td>
+				<td><input type="radio" name="gender"/>M<input type="radio" name="gender"/>F</td>
+			</tr>
+			<tr>
+				<td>Course</td>
+				<td><input type="checkbox" name="php"/>PHP<input type="checkbox" name="mysql">MySQL</td>
+			</tr>
+			<tr>
+				<td>City</td>
+				<td>
+					<select>
+						<option>Bhopal</option>
+						<option>delhi</option>
+						<option>Patna</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="Register"/></td>
+				<td><input type="Reset"/></td>
+			</tr>
+		</table>
+		</form>
+	</body>
+</html>

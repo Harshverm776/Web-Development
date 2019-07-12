@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function f()
+		{
+			var v=document.getElementById("p1");
+			alert(v.innerHTML);// input: v , tagName
+			v.innerHTML="This is modified paragraph";
+		}
+		function f1()
+		{
+			var x=document.getElementsByTagName("h1");
+			alert(x[0].innerHTML);
+			alert(x[1].innerHTML);
+		}
+	</script>
+</head>
+<body>
+	<h1> Welcome...</h1>
+	<h1>Welcome Again...</h1>
+	<p id="p1">This is a paragraph.</p>
+	<p> This is another paragraph.</p>
+	<br/>
+	Click this for change paragraph : 
+	<button onclick="f()">Click</button>
+	<br/><br>
+	 This for heading : 
+	<button onclick="f1()">Click</button>
+
+</body>
+</html>

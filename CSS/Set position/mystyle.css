@@ -1,0 +1,35 @@
+#header
+{
+	width: 500px;
+	height: 800px;
+	background-color:black;
+}
+#d1
+{
+	position: absolute;
+	top:200px;
+	left:100px;
+	width:100px;
+	height:100px;
+	background-color:silver;
+}
+#header #head1
+{
+	color:white;
+	position:relative;
+	top :100px;
+}
+#header #headbar
+{
+	top:60px;
+	position: fixed;
+	width:500px;
+	height:80px;
+	background-color:red;
+	z-index:99;
+}
+#header #headbar h1
+{
+	position:relative;
+	left :50px;
+}

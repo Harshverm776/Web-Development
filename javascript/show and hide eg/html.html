@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(
+			function()
+			{
+				var buttonElementId;
+				$(':button').click(function(){
+					buttonElementId=$(this).attr('id');
+					var num=buttonElementId[1];
+						var i;
+						for(i=1;i<=3;i++)
+						{
+							//document.write(i+"  "+num);
+							if(i==num)
+								$("#a"+num).show();
+							else
+								$("#a"+i).hide();
+							
+						}
+				});
+					
+			});
+	</script>
+	<style type="text/css">
+		img{
+			display:none;
+			position: absolute;
+			margin-left: 100px;
+			margin-top:100px;
+		}
+	</style>
+</head>
+<body>
+	<button id="b1">1</button><br><br>
+	<img src="Harsh.jpg" id="a1" width="300">
+	<button id="b2">2</button><br><br>
+	<img src="DHB.jpg" id="a2"  width="300">
+	<button id="b3">3</button><br><br>
+	<img src="QA.jpg" id="a3" width="300">
+</body>
+</html>
